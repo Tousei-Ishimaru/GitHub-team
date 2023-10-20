@@ -9,6 +9,6 @@ class Armor:
         return random.randint(0, self.max_block)
     
 if __name__ == "__main__":
-    my_armor = Armor("Grace Hopper", 100)
+    my_armor = Armor("Ororo Munroe", 100)
     print(my_armor.name)
     print(my_armor.max_block)
