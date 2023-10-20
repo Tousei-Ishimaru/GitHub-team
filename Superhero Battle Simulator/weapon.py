@@ -1,3 +1,5 @@
+#weapon.py
+import random
 from ability import Ability
 class Weapon(Ability):
   def attack(self):
