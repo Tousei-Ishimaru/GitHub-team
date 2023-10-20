@@ -1,18 +1,19 @@
-# hero.py
-class Hero:
-  # We want our hero to have a default "starting_health",
-  # so we can set that in the function header.
-  def __init__(self, name, starting_health=100):
-    '''Instance properties:
-      name: String
-      starting_health: Integer
-      current_health: Integer
-    '''
+import random
 
-    # we know the name of our hero, so we assign it here
-    self.name = name
-    # similarly, our starting health is passed in, just like name
-    self.starting_health = starting_health
-    # when a hero is created, their current health is
-    # always the same as their starting health (no damage taken yet!)
-    self.current_health = starting_health
+class Hero:
+    def __init__(self, name, starting_health = 100):
+        self.name = name
+        self.starting_health = starting_health
+        self.current_health = starting_health
+
+    def battle(self, opponent):
+        ran = randint(0,1)
+        if (ran == 0):
+            print(self)
+        else if (ran == 1):
+            print(opponent)
+
+    if __name__ == "__main__":
+        my_hero = Hero("grace hopper", 200)
+        print(my_hero.name)
+        print(my_hero.current_health)
